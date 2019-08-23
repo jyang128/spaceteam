@@ -2,7 +2,7 @@
 
 ## Overview
  
-A simple dashboard/interface built to practice React/Redux. Inspired by the control panels from [https://en.wikipedia.org/wiki/Spaceteam](Spaceteam), a wacky cooperative multiplayer video game.
+A simple dashboard/interface built to practice React/Redux. Inspired by the control panels from [Spaceteam](https://en.wikipedia.org/wiki/Spaceteam), a wacky cooperative multiplayer video game.
 
 ### Technology
 
