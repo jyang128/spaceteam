@@ -1,35 +1,15 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { incrementCounter, decrementCounter } from '../actions';
+import Counter from '../containers/counter';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.increment = this.increment.bind(this);
-    this.decrement = this.decrement.bind(this);
-  }
-  increment() {
-    this.props.dispatch(incrementCounter());
-  }
-  decrement() {
-    this.props.dispatch(decrementCounter());
-  }
-  render() {
-    return (
-      <div className="counter">
-        <h2>Counter</h2>
-        <div>
-          <button onClick={this.decrement}>-</button>
-          <span className="count">{this.props.count}</span>
-          <button onClick={this.increment}>+</button>
-        </div>
+export default function App() {
+  return (
+    <div className="game-area">
+      <div className="screen-panel">
+
       </div>
-    );
-  }
+      <div className="control-panel texture">
+        <Counter/>
+      </div>
+    </div>
+  );
 }
-
-const mapStateToProps = state => ({
-  count: state.count
-});
-
-export default connect(mapStateToProps)(App);
