@@ -1,6 +1,7 @@
 /* General skeleton styling */
 body {
   margin: 0;
+  padding: 0;
 }
 
 .game-area {
@@ -12,6 +13,7 @@ body {
 .screen-panel {
   height: 15%;
   background: url(./images/spaceship.png) no-repeat;
+  background-color: black;
   background-position: center;
 }
 
@@ -31,6 +33,24 @@ body {
   font-family: "Helvetica";
   color: white;
   background-color: rgba(65, 65, 65, 0.5);
+}
+
+/* TextInput component */
+.text-input h1 {
+  margin-top: 0;
+}
+
+.text-input input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.text-input button {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-left: 5px;
+  font-size: 20px;
 }
 
 /* Counter component */
@@ -62,14 +82,21 @@ body {
   transition: 0.2s all;
 }
 
-.counter button:active,
-.counter button:focus {
+/* General button styles */
+button:active,
+button:focus {
   outline: none;
   box-shadow: 0 0 2px rgb(160, 67, 67);
 }
 
-.counter button:active {
+button:active {
   background-color: rgb(160, 67, 67);
   border-color: rgb(160, 67, 67);
   color: #fff;
+}
+
+@media screen and (max-width: 925px) {
+  .game-area {
+      max-width: 80%;
+  }
 }

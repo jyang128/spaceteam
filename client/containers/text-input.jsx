@@ -24,18 +24,18 @@ export default class TextInput extends React.Component {
   }
   render() {
     return (
-      <div className="container">
-        <h1>{this.state.shownText}</h1>
+      <div className="text-input container">
+        <h1 className="container">{this.state.shownText}</h1>
         <form onSubmit={this.submitText}>
           <input
             type="text"
             value={this.state.text}
-            placeholder="Spaceteam"
+            placeholder="Update the title"
             required="text"
             onChange={this.handleText}
           />
           <button type="submit" >
-                        Update
+                Submit
           </button>
         </form>
       </div>
