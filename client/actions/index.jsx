@@ -6,3 +6,8 @@ export const incrementCounter = () => ({
 export const decrementCounter = () => ({
   type: 'DECREMENT'
 });
+
+export const saveText = text => ({
+  type: 'SAVE_TEXT',
+  text
+});

@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { saveText } from '../actions';
 
-export default class TextInput extends React.Component {
+class TextInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,14 +20,14 @@ export default class TextInput extends React.Component {
   submitText(event) {
     event.preventDefault();
     this.setState({
-      text: '',
-      shownText: this.state.text
+      text: ''
     });
+    this.props.dispatch(saveText(this.state.text));
   }
   render() {
     return (
       <div className="text-input container">
-        <h1 className="container">{this.state.shownText}</h1>
+        <h1 className="container">{this.props.shownText}</h1>
         <form onSubmit={this.submitText}>
           <input
             type="text"
@@ -42,3 +44,9 @@ export default class TextInput extends React.Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  shownText: state.textInput
+});
+
+export default connect(mapStateToProps)(TextInput);
