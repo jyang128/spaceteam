@@ -16,7 +16,7 @@ class Counter extends React.Component {
   }
   render() {
     return (
-      <div className="counter">
+      <div className="counter container">
         <h2>Counter</h2>
         <div>
           <button onClick={this.decrement}>-</button>

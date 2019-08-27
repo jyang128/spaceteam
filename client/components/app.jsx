@@ -1,4 +1,5 @@
 import React from 'react';
+import TextInput from '../containers/text-input';
 import Counter from '../containers/counter';
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
 
       </div>
       <div className="control-panel texture">
+        <TextInput/>
         <Counter/>
       </div>
     </div>
