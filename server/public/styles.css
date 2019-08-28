@@ -82,6 +82,31 @@ body {
   transition: 0.2s all;
 }
 
+/* Toggle component */
+.outer {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: auto;
+  width: 150px;
+  height: 30px;
+  position: relative;
+  transition: 0.2s all;
+}
+
+.inner {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 75px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inner.on {
+  left: 75px;
+}
+
 /* General button styles */
 button:active,
 button:focus {
