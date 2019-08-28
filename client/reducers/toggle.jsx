@@ -1,4 +1,4 @@
-const initialState = true;
+const initialState = false;
 
 const toggle = (state = initialState, action) => {
   switch (action.type) {
