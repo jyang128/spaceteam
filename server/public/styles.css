@@ -82,6 +82,53 @@ body {
   transition: 0.2s all;
 }
 
+/* Toggle component */
+.toggle h2 {
+  margin: 0;
+  margin-bottom: 15px;
+} 
+
+.outer {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: auto;
+  width: 150px;
+  height: 30px;
+  position: relative;
+}
+
+.inner {
+  width: 75px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+.on {
+  left: 73px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.outer::before {
+  content: 'OFF';
+  left: -50px;
+  top: 7px;
+  position: absolute;
+}
+
+.outer::after {
+  content: 'ON';
+  left: 165px;
+  top: 7px;
+  position: absolute;
+}
+
 /* General button styles */
 button:active,
 button:focus {
