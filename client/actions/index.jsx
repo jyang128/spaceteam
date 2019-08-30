@@ -15,3 +15,8 @@ export const saveText = text => ({
 export const moveToggle = () => ({
   type: 'TOGGLE'
 });
+
+export const clickButton = name => ({
+  type: 'CLICK_BUTTON',
+  name
+});
