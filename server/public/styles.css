@@ -153,6 +153,12 @@ body {
   color: white;
 }
 
+/*Slider component*/
+.slider h2 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
 /* General button styles */
 button:active,
 button:focus {

@@ -14,7 +14,7 @@ class Toggle extends React.Component {
     const toggleClass = this.props.toggleState ? 'on' : '';
     return (
       <div className="toggle container">
-        <h2>Toggle</h2>
+        <h2>{this.props.name}</h2>
         <div className="outer">
           <div className={`inner ${toggleClass}`} onClick={this.handleToggle}>
 

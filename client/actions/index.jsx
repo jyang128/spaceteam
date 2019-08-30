@@ -20,3 +20,8 @@ export const clickButton = name => ({
   type: 'CLICK_BUTTON',
   name
 });
+
+export const changeSlider = number => ({
+  type: 'MOVE_SLIDER',
+  number
+});
