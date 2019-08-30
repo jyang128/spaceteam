@@ -13,12 +13,43 @@ class Buttons extends React.Component {
   render() {
     return (
       <div className="buttons container">
-        <div className="">
-          <button name="one" className={this.props.buttonState.one && 'on'}>1</button>
-          <button name="two" className={this.props.buttonState.two && 'on'}>2</button>
-          <button name="three" className={this.props.buttonState.three && 'on'}>3</button>
-          <button name="four" className={this.props.buttonState.four && 'on'}>4</button>
-        </div>
+        <h2>Buttons</h2>
+        <button
+          name="one"
+          onClick={this.handleButtons}
+          className={this.props.buttonState.one ? 'on' : ''}>
+            1
+        </button>
+        <button
+          name="two"
+          onClick={this.handleButtons}
+          className={this.props.buttonState.two ? 'on' : ''}>
+            2
+        </button>
+        <button
+          name="three"
+          onClick={this.handleButtons}
+          className={this.props.buttonState.three ? 'on' : ''}>
+            3
+        </button>
+        <button
+          name="four"
+          onClick={this.handleButtons}
+          className={this.props.buttonState.four ? 'on' : ''}>
+            4
+        </button>
+        <button
+          name="five"
+          onClick={this.handleButtons}
+          className={this.props.buttonState.five ? 'on' : ''}>
+            5
+        </button>
+        <button
+          name="six"
+          onClick={this.handleButtons}
+          className={this.props.buttonState.six ? 'on' : ''}>
+            6
+        </button>
       </div>
     );
   }

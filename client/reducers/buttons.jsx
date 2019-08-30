@@ -1,11 +1,4 @@
-const initialState = {
-  one: false,
-  two: false,
-  three: false,
-  four: false
-};
-
-const buttonState = (state = initialState, action) => {
+const buttonState = (state = {}, action) => {
   switch (action.type) {
     case 'CLICK_BUTTON':
       return { ...state, [action.name]: !state[action.name] };

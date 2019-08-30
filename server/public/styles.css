@@ -129,6 +129,30 @@ body {
   position: absolute;
 }
 
+/* Buttons component */
+.buttons h2 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.buttons button {
+  border: 1px solid #ccc;
+  color: #323232;
+  font-size: 20px;
+  line-height: 0;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.buttons button.on {
+  background-color: rgb(160, 67, 67); 
+  border: 1px solid rgb(160, 67, 67);
+  color: white;
+}
+
 /* General button styles */
 button:active,
 button:focus {
