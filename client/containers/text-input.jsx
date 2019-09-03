@@ -6,15 +6,14 @@ class TextInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: '',
-      shownText: 'Hello!'
+      text: ''
     };
     this.handleText = this.handleText.bind(this);
     this.submitText = this.submitText.bind(this);
   }
   handleText(event) {
     let text = event.target.value;
-    if (text.length > 15) return;
+    if (text.length > 20) return;
     this.setState({ text });
   }
   submitText(event) {
@@ -27,7 +26,7 @@ class TextInput extends React.Component {
   render() {
     return (
       <div className="text-input container">
-        <h1>{this.props.shownText}</h1>
+        <h2>{this.props.shownText}</h2>
         <form onSubmit={this.submitText}>
           <input
             type="text"
