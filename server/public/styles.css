@@ -11,7 +11,7 @@ body {
 }
 
 .screen-panel {
-  height: 15%;
+  height: 20%;
   background: url(./images/spaceship.png) no-repeat;
   background-color: black;
   background-position: center;
@@ -23,32 +23,34 @@ body {
 }
 
 .control-panel {
-  height: 85%;
+  height: 80%;
 }
 
 .control-panel .container {
-  border: 2px solid #ccc;
+  box-sizing: border-box;
+  height: 20%;
+  border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
   font-family: "Helvetica";
   color: white;
-  background-color: rgba(65, 65, 65, 0.5);
+  background-color: rgba(65, 65, 65, 0.4);
 }
 
 /* TextInput component */
-.text-input h1 {
+.text-input h2 {
   margin-top: 0;
 }
 
 .text-input input {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 7px;
   font-size: 20px;
 }
 
 .text-input button {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 7px;
   margin-left: 5px;
   font-size: 20px;
 }

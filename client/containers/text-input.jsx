@@ -27,7 +27,7 @@ class TextInput extends React.Component {
   render() {
     return (
       <div className="text-input container">
-        <h1>{this.props.shownText}</h1>
+        <h2>{this.props.shownText}</h2>
         <form onSubmit={this.submitText}>
           <input
             type="text"
