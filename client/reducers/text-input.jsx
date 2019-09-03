@@ -1,4 +1,4 @@
-const initialState = 'Hello!';
+const initialState = 'Spaceteam';
 
 const textInput = (state = initialState, action) => {
   switch (action.type) {
